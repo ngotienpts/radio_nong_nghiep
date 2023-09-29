@@ -91,6 +91,7 @@
             rel="stylesheet"
         />
         <!-- end font -->
+        <link rel="stylesheet" href="./lib/swiper/swiper-bundle.min.css">
         <link rel="stylesheet" href="./css/style.css" />
         <link rel="stylesheet" href="./css/responsive.css" />
         <script src="./lib/jquery/jquery.js"></script>
@@ -221,8 +222,15 @@
 
                 <!-- header center -->
                 <div
-                    class="header-center wrapper w-1080 d-2xl-flex items-center justify-center py-15"
+                    class="header-center wrapper w-1080 d-2xl-flex items-center justify-between py-15"
                 >
+                    <!-- logo nong nghiep -->
+                    <div class="header-left__logo">
+                        <a href="#">
+                            <img src="./images/svg/logo_nong_nghiep_white.svg" alt="" />
+                        </a>
+                    </div>
+                    <!-- end logo nong nghiep-->
                     <!-- logo -->
                     <div class="header-center__logo">
                         <a href="#">
@@ -230,6 +238,13 @@
                         </a>
                     </div>
                     <!-- end logo -->
+                    <!-- logo live-->
+                    <div class="header-right__logo">
+                        <a href="#">
+                            <img src="./images/svg/Logo_Radio_Live.svg" alt="" />
+                        </a>
+                    </div>
+                    <!-- end logo live-->
                 </div>
                 <!-- end header center -->
 
@@ -237,7 +252,7 @@
                 <div class="wrapper w-1080 menu-pc d-2xl-flex items-center justify-between">
                     <!-- navbar -->
                     <ul
-                        class="navbar d-2xl-flex items-center flex-1 fw-500 fs-14 text-white"
+                        class="navbar d-2xl-flex items-center flex-1 fw-500 fs-14 lh-120 text-white"
                     >
                         <li class="navbar-item hover-orange">
                             <a href="#" class="">
@@ -255,8 +270,13 @@
                                 </svg>
                             </a>
                         </li>
-                        <li class="navbar-item hover-orange">
-                            <a href="#">Tri thức nghề nông</a>
+                        <li class="navbar-item">
+                            <div class="navbar-item__heading d-2xl-flex items-center hover-orange uppercase">
+                                <a href="#" class="navbar-item__link">Thời sự</a>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="navbar-item__icon" width="6" height="6" viewBox="0 0 6 6" fill="none">
+                                    <path d="M5.8673 1.08685C6.1782 0.487308 5.9241 -3.31769e-09 5.30035 -3.05825e-08L0.699946 -2.31673e-07C0.0760847 -2.58943e-07 -0.177788 0.487308 0.132081 1.08685L2.43847 5.55015C2.74834 6.14995 3.25162 6.14995 3.56183 5.55015L5.8673 1.08685Z" fill="currentColor"/>
+                                    </svg>
+                            </div>
                             <ul class="navbar-dropdown text-green-337">
                                 <li class="navbar-dropdown__item">
                                     <a href="#">Cate 1</a>
@@ -269,21 +289,159 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="navbar-item hover-orange">
-                            <a href="#">Tiếng Việt Văn Việt Người Việt</a>
+                        <li class="navbar-item">
+                            <div class="navbar-item__heading d-2xl-flex items-center hover-orange uppercase">
+                                <a href="#" class="navbar-item__link">Thời sự</a>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="navbar-item__icon" width="6" height="6" viewBox="0 0 6 6" fill="none">
+                                    <path d="M5.8673 1.08685C6.1782 0.487308 5.9241 -3.31769e-09 5.30035 -3.05825e-08L0.699946 -2.31673e-07C0.0760847 -2.58943e-07 -0.177788 0.487308 0.132081 1.08685L2.43847 5.55015C2.74834 6.14995 3.25162 6.14995 3.56183 5.55015L5.8673 1.08685Z" fill="currentColor"/>
+                                    </svg>
+                            </div>
+                            <ul class="navbar-dropdown text-green-337">
+                                <li class="navbar-dropdown__item">
+                                    <a href="#">Cate 1</a>
+                                </li>
+                                <li class="navbar-dropdown__item">
+                                    <a href="#">Cate 1</a>
+                                </li>
+                                <li class="navbar-dropdown__item">
+                                    <a href="#">Cate 1</a>
+                                </li>
+                            </ul>
                         </li>
-                        <li class="navbar-item hover-orange">
-                            <a href="#">Tủ sách cộng đồng</a>
+                        <li class="navbar-item">
+                            <div class="navbar-item__heading d-2xl-flex items-center hover-orange uppercase">
+                                <a href="#" class="navbar-item__link">Thời sự</a>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="navbar-item__icon" width="6" height="6" viewBox="0 0 6 6" fill="none">
+                                    <path d="M5.8673 1.08685C6.1782 0.487308 5.9241 -3.31769e-09 5.30035 -3.05825e-08L0.699946 -2.31673e-07C0.0760847 -2.58943e-07 -0.177788 0.487308 0.132081 1.08685L2.43847 5.55015C2.74834 6.14995 3.25162 6.14995 3.56183 5.55015L5.8673 1.08685Z" fill="currentColor"/>
+                                    </svg>
+                            </div>
+                            <ul class="navbar-dropdown text-green-337">
+                                <li class="navbar-dropdown__item">
+                                    <a href="#">Cate 1</a>
+                                </li>
+                                <li class="navbar-dropdown__item">
+                                    <a href="#">Cate 1</a>
+                                </li>
+                                <li class="navbar-dropdown__item">
+                                    <a href="#">Cate 1</a>
+                                </li>
+                            </ul>
                         </li>
-                        <li class="navbar-item hover-orange">
-                            <a href="#">Startup</a>
+                        <li class="navbar-item">
+                            <div class="navbar-item__heading d-2xl-flex items-center hover-orange uppercase">
+                                <a href="#" class="navbar-item__link">Thời sự</a>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="navbar-item__icon" width="6" height="6" viewBox="0 0 6 6" fill="none">
+                                    <path d="M5.8673 1.08685C6.1782 0.487308 5.9241 -3.31769e-09 5.30035 -3.05825e-08L0.699946 -2.31673e-07C0.0760847 -2.58943e-07 -0.177788 0.487308 0.132081 1.08685L2.43847 5.55015C2.74834 6.14995 3.25162 6.14995 3.56183 5.55015L5.8673 1.08685Z" fill="currentColor"/>
+                                    </svg>
+                            </div>
+                            <ul class="navbar-dropdown text-green-337">
+                                <li class="navbar-dropdown__item">
+                                    <a href="#">Cate 1</a>
+                                </li>
+                                <li class="navbar-dropdown__item">
+                                    <a href="#">Cate 1</a>
+                                </li>
+                                <li class="navbar-dropdown__item">
+                                    <a href="#">Cate 1</a>
+                                </li>
+                            </ul>
                         </li>
-                        <li class="navbar-item hover-orange">
-                            <a href="#">Không gian kết nối</a>
+                        <li class="navbar-item">
+                            <div class="navbar-item__heading d-2xl-flex items-center hover-orange uppercase">
+                                <a href="#" class="navbar-item__link">Thời sự</a>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="navbar-item__icon" width="6" height="6" viewBox="0 0 6 6" fill="none">
+                                    <path d="M5.8673 1.08685C6.1782 0.487308 5.9241 -3.31769e-09 5.30035 -3.05825e-08L0.699946 -2.31673e-07C0.0760847 -2.58943e-07 -0.177788 0.487308 0.132081 1.08685L2.43847 5.55015C2.74834 6.14995 3.25162 6.14995 3.56183 5.55015L5.8673 1.08685Z" fill="currentColor"/>
+                                    </svg>
+                            </div>
+                            <ul class="navbar-dropdown text-green-337">
+                                <li class="navbar-dropdown__item">
+                                    <a href="#">Cate 1</a>
+                                </li>
+                                <li class="navbar-dropdown__item">
+                                    <a href="#">Cate 1</a>
+                                </li>
+                                <li class="navbar-dropdown__item">
+                                    <a href="#">Cate 1</a>
+                                </li>
+                            </ul>
                         </li>
-                        <li class="navbar-item hover-orange">
-                            <a href="#">Nhìn ra thế giới</a>
+                        <li class="navbar-item">
+                            <div class="navbar-item__heading d-2xl-flex items-center hover-orange uppercase">
+                                <a href="#" class="navbar-item__link">Thời sự</a>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="navbar-item__icon" width="6" height="6" viewBox="0 0 6 6" fill="none">
+                                    <path d="M5.8673 1.08685C6.1782 0.487308 5.9241 -3.31769e-09 5.30035 -3.05825e-08L0.699946 -2.31673e-07C0.0760847 -2.58943e-07 -0.177788 0.487308 0.132081 1.08685L2.43847 5.55015C2.74834 6.14995 3.25162 6.14995 3.56183 5.55015L5.8673 1.08685Z" fill="currentColor"/>
+                                    </svg>
+                            </div>
+                            <ul class="navbar-dropdown text-green-337">
+                                <li class="navbar-dropdown__item">
+                                    <a href="#">Cate 1</a>
+                                </li>
+                                <li class="navbar-dropdown__item">
+                                    <a href="#">Cate 1</a>
+                                </li>
+                                <li class="navbar-dropdown__item">
+                                    <a href="#">Cate 1</a>
+                                </li>
+                            </ul>
                         </li>
+                        <li class="navbar-item">
+                            <div class="navbar-item__heading d-2xl-flex items-center hover-orange uppercase">
+                                <a href="#" class="navbar-item__link">Thời sự</a>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="navbar-item__icon" width="6" height="6" viewBox="0 0 6 6" fill="none">
+                                    <path d="M5.8673 1.08685C6.1782 0.487308 5.9241 -3.31769e-09 5.30035 -3.05825e-08L0.699946 -2.31673e-07C0.0760847 -2.58943e-07 -0.177788 0.487308 0.132081 1.08685L2.43847 5.55015C2.74834 6.14995 3.25162 6.14995 3.56183 5.55015L5.8673 1.08685Z" fill="currentColor"/>
+                                    </svg>
+                            </div>
+                            <ul class="navbar-dropdown text-green-337">
+                                <li class="navbar-dropdown__item">
+                                    <a href="#">Cate 1</a>
+                                </li>
+                                <li class="navbar-dropdown__item">
+                                    <a href="#">Cate 1</a>
+                                </li>
+                                <li class="navbar-dropdown__item">
+                                    <a href="#">Cate 1</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navbar-item">
+                            <div class="navbar-item__heading d-2xl-flex items-center hover-orange uppercase">
+                                <a href="#" class="navbar-item__link">Thời sự</a>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="navbar-item__icon" width="6" height="6" viewBox="0 0 6 6" fill="none">
+                                    <path d="M5.8673 1.08685C6.1782 0.487308 5.9241 -3.31769e-09 5.30035 -3.05825e-08L0.699946 -2.31673e-07C0.0760847 -2.58943e-07 -0.177788 0.487308 0.132081 1.08685L2.43847 5.55015C2.74834 6.14995 3.25162 6.14995 3.56183 5.55015L5.8673 1.08685Z" fill="currentColor"/>
+                                    </svg>
+                            </div>
+                            <ul class="navbar-dropdown text-green-337">
+                                <li class="navbar-dropdown__item">
+                                    <a href="#">Cate 1</a>
+                                </li>
+                                <li class="navbar-dropdown__item">
+                                    <a href="#">Cate 1</a>
+                                </li>
+                                <li class="navbar-dropdown__item">
+                                    <a href="#">Cate 1</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navbar-item">
+                            <div class="navbar-item__heading d-2xl-flex items-center hover-orange uppercase">
+                                <a href="#" class="navbar-item__link">Thời sự</a>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="navbar-item__icon" width="6" height="6" viewBox="0 0 6 6" fill="none">
+                                    <path d="M5.8673 1.08685C6.1782 0.487308 5.9241 -3.31769e-09 5.30035 -3.05825e-08L0.699946 -2.31673e-07C0.0760847 -2.58943e-07 -0.177788 0.487308 0.132081 1.08685L2.43847 5.55015C2.74834 6.14995 3.25162 6.14995 3.56183 5.55015L5.8673 1.08685Z" fill="currentColor"/>
+                                    </svg>
+                            </div>
+                            <ul class="navbar-dropdown text-green-337">
+                                <li class="navbar-dropdown__item">
+                                    <a href="#">Cate 1</a>
+                                </li>
+                                <li class="navbar-dropdown__item">
+                                    <a href="#">Cate 1</a>
+                                </li>
+                                <li class="navbar-dropdown__item">
+                                    <a href="#">Cate 1</a>
+                                </li>
+                            </ul>
+                        </li>
+                       
                     </ul>
                     <!-- end navbar -->
                     <div class="more-menu flex-0 js__parrentMenu">
@@ -535,7 +693,7 @@
             <div class="d-2xl-none d-lg-block">
                 <!-- header top -->
                 <div
-                    class="header-top-mb d-2xl-flex items-center justify-between pr-15 py-10"
+                    class="header-top-mb d-2xl-flex items-center justify-between bg-green-237 pr-15 py-10"
                 >
                     <!-- left -->
                     <div class="left d-2xl-flex items-center">
@@ -738,15 +896,20 @@
                     <!-- end left -->
 
                     <!-- right -->
-                    <div class="right">
+                    <div class="right d-2xl-flex items-center">
+                        <div class="logo-liver mr-10">
+                            <a href="#">
+                                <img src="./images/svg/Logo_Radio_Live.svg" alt="" />
+                            </a>
+                        </div>
                         <ul
                             class="header-top__social h-full d-2xl-flex items-center"
                         >
                             <!-- item -->
-                            <li class="item text-green-09">
+                            <li class="item text-gray-91">
                                 <a
                                     href="#"
-                                    class="link h-full d-2xl-flex items-center hover-orange js__searchMb"
+                                    class="link h-full d-2xl-flex items-center js__searchMb"
                                 >
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -805,95 +968,6 @@
                                 <!-- end form -->
                             </li>
                             <!-- end item -->
-                            <!-- item -->
-                            <li class="item text-green-09 h-full">
-                                <a
-                                    href="#"
-                                    class="link h-full d-2xl-flex items-center hover-orange"
-                                >
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="30"
-                                        height="31"
-                                        viewBox="0 0 30 31"
-                                        fill="none"
-                                    >
-                                        <circle
-                                            opacity="0.1"
-                                            cx="15"
-                                            cy="15.5"
-                                            r="15"
-                                            fill="currentColor"
-                                        ></circle>
-                                        <path
-                                            d="M18.2222 13.0871L17.9795 15.5L16.14 15.5L16.14 22.5L13.3769 22.5L13.3769 15.5L12 15.5L12 13.0871L13.3769 13.0871L13.3769 11.6344C13.3769 9.67188 14.1552 8.5 16.3678 8.5L18.2065 8.5L18.2065 10.9129L17.0558 10.9129C16.1974 10.9129 16.14 11.2531 16.14 11.8814V13.0871L18.2222 13.0871Z"
-                                            fill="currentColor"
-                                        ></path>
-                                    </svg>
-                                </a>
-                            </li>
-                            <!-- end item -->
-                            <!-- item -->
-                            <li class="item text-green-09">
-                                <a
-                                    href="#"
-                                    class="link h-full d-2xl-flex items-center hover-orange"
-                                >
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="30"
-                                        height="31"
-                                        viewBox="0 0 30 31"
-                                        fill="none"
-                                    >
-                                        <circle
-                                            opacity="0.1"
-                                            cx="15"
-                                            cy="15.5"
-                                            r="15"
-                                            fill="currentColor"
-                                        ></circle>
-                                        <path
-                                            d="M22.75 10.8846C22.1594 11.1615 21.5688 11.2538 20.8797 11.3462C21.5688 10.9769 22.0609 10.4231 22.2578 9.68462C21.6672 10.0538 20.9781 10.2385 20.1906 10.4231C19.6 9.86923 18.7141 9.5 17.8281 9.5C16.1547 9.5 14.6781 10.8846 14.6781 12.5462C14.6781 12.8231 14.6781 13.0077 14.7766 13.1923C12.1188 13.1 9.65781 11.9 8.08281 10.0538C7.7875 10.5154 7.68906 10.9769 7.68906 11.6231C7.68906 12.6385 8.27969 13.5615 9.16563 14.1154C8.67344 14.1154 8.18125 13.9308 7.68906 13.7462C7.68906 15.2231 8.77187 16.4231 10.2484 16.7C9.95312 16.7923 9.65781 16.7923 9.3625 16.7923C9.16563 16.7923 8.96875 16.7923 8.77187 16.7C9.16562 17.9 10.3469 18.8231 11.8234 18.8231C10.7406 19.6538 9.3625 20.1154 7.7875 20.1154H7C8.47656 20.9462 10.15 21.5 11.9219 21.5C17.8281 21.5 21.0766 16.8846 21.0766 12.9154V12.5462C21.7656 12.0846 22.3562 11.5308 22.75 10.8846Z"
-                                            fill="currentColor"
-                                        ></path>
-                                    </svg>
-                                </a>
-                            </li>
-                            <!-- end item -->
-
-                            <!-- item -->
-                            <li class="item text-green-09">
-                                <a
-                                    href="#"
-                                    class="link h-full d-2xl-flex items-center hover-orange"
-                                >
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="30"
-                                        height="31"
-                                        viewBox="0 0 30 31"
-                                        fill="none"
-                                    >
-                                        <circle
-                                            opacity="0.1"
-                                            cx="15"
-                                            cy="15.5"
-                                            r="15"
-                                            fill="currentColor"
-                                        ></circle>
-                                        <path
-                                            d="M22.9 11.1H20.1V8.5H19.5V11.1H16.8V11.9H19.5V14.5H20.1V11.9H22.9V11.1Z"
-                                            fill="currentColor"
-                                        ></path>
-                                        <path
-                                            d="M13.8 16.2C13.4 16 12.7 15.3 12.7 14.9C12.7 14.5 12.8 14.2 13.5 13.7C14.2 13.2 14.7 12.5 14.7 11.6C14.7 10.5 14.2 9.5 13.4 9.2H14.7L15.6 8.5H11.4C9.5 8.5 7.8 9.9 7.8 11.6C7.8 13.3 9.1 14.6 11 14.6H11.4C11.2 14.8 11.2 15 11.2 15.3C11.2 15.8 11.5 16.1 11.8 16.5H11.1C8.8 16.5 7 18 7 19.5C7 21 9 22 11.3 22C13.9 22 15.4 20.5 15.4 19C15.3 17.7 14.9 17 13.8 16.2ZM11.6 14.1C10.5 14.1 9.5 12.9 9.3 11.5C9.1 10.1 9.8 9 10.9 9C12 9 13 10.2 13.2 11.6C13.4 13 12.7 14.2 11.6 14.1ZM11.2 21.3C9.6 21.3 8.4 20.3 8.4 19.1C8.4 17.9 9.8 16.9 11.4 16.9C11.8 16.9 12.1 17 12.4 17.1C13.3 17.7 13.9 18 14.1 18.7C14.1 18.8 14.2 19 14.2 19.1C14.2 20.3 13.4 21.3 11.2 21.3Z"
-                                            fill="currentColor"
-                                        ></path>
-                                    </svg>
-                                </a>
-                            </li>
-                            <!-- end item -->
                         </ul>
                     </div>
                     <!-- end right -->
@@ -901,9 +975,9 @@
                 <!-- end header top -->
 
                 <!-- navbar -->
-                <div class="navbar-menu-mb js__navbarMenuMb bg-green-039 py-12 pl-15 pr-40 relative">
+                <div class="navbar-menu-mb js__navbarMenuMb bg-green-096 py-12 pl-15 pr-40 relative">
                     <ul
-                        class="navbar-mb js__navbarMb d-2xl-flex items-center fs-14 font-helve"
+                        class="navbar-mb js__navbarMb d-2xl-flex items-center fs-14 uppercase"
                     >
                         <li class="navbar-item hover-orange text-white">
                             <a href="#" class="">
@@ -953,101 +1027,205 @@
         <!-- end header -->
         <!-- main -->
         <main id="main" class="main">
-            <!-- pc -->
-            <div class="wrapper d-2xl-block d-lg-none mt-30">
-                <!-- section primary -->
-                <section class="section-primary w-1080 d-2xl-grid gap-20 mb-15">
-                    <!-- large -->
-                    <div class="large">
-                        <div class="d-2xl-flex border-10 bg-white">
-                            <!-- img -->
-                            <div class="article__img flex-0 w-65">
-                                <a href="#" class="image-wrapper border-10">
-                                    <img src="./images/3.jpg" alt="">
-                                </a>
+            <!-- tertiary -->
+            <section class="wrapper section-tertiary mb-30">
+                <div class="section-tertiary__inner w-1080 relative z-10">
+                    <div class="section-tertiary__container js__swiperItemsContainer">
+                        <div class="swiper section-tertiary__swiper js__swiperItems">
+                            <div class="swiper-wrapper">
+                                <!-- slide -->
+                                <div class="swiper-slide section-tertiary__slide">
+                                    <div class="article d-2xl-flex d-sm-block">
+                                        <!-- img -->
+                                        <div class="article__img flex-0 w-35">
+                                            <a href="#" class="image-wrapper-full border-10">
+                                                <img src="./images/3.jpg" alt="">
+                                                <img src="./images/Logo.png" alt="" class="article__note-icon">
+                                            </a>
+                                        </div>
+                                        <!-- end img -->
+                                        <!-- content -->
+                                        <div class="article__content flex-1">
+                                            <h2 class="article__title fix-text3 fs-32 lh-130 fw-700 text-white hover-orange tracking-064">
+                                                <a href="#">Chàng kỹ sư trẻ xây dựng kênh podcast về nông nghiệp sạch</a>
+                                            </h2>
+                                            <p class="article__des fix-text4 fs-15 font-arial lh-130 text-white my-15">
+                                                Là đất nước sản xuất muối tiềm năng, nhưng mỗi
+                                                năm Việt Nam vẫn phải nhập khẩu muối để đáp ứng
+                                                nhu cầu trong nước. Muối nội địa có giá thành
+                                                cao, chất lượng thấp, rất khó cạnh tranh với
+                                                muối nhập khẩu nên khó tiêu thụ.
+                                            </p>
+                                            <div class="cate-action d-2xl-flex items-center">
+                                                <!-- cate time -->
+                                                <div class="cate-action__time hover-orange-3">
+                                                    <a href="#" class="fs-14 d-2xl-flex items-center">
+                                                        <span class="text-white">Câu chuyện</span> 
+                                                        <span class="text-white">&nbsp;|&nbsp;1 giờ</span>
+                                                    </a>
+                                                </div>
+                                                <!-- end cate time -->
+                                                <!-- cmt count -->
+                                                <a href="#" class="cate-action__countCmt d-2xl-flex items-center ml-20 hover-orange-3">
+                                                    <div class="cate-action__countCmtIcon d-2xl-flex items-center text-gray-bd mr-4">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12" fill="none">
+                                                            <path d="M10.6667 1.33329C10.6667 0.966626 10.3667 0.666626 10 0.666626H0.666667C0.3 0.666626 0 0.966626 0 1.33329V8.66663C0 9.03329 0.3 9.33329 0.666667 9.33329H8.33333L10.6667 11.3333V1.33329Z" fill="currentColor"></path>
+                                                            </svg>
+                                                        </div>
+                                                        <span class="text-white fs-12">139</span>
+                                                    </a>
+                                                    <!-- end cmt count -->
+                                                </div>
+                                                <!-- play -->
+                                                <div class="cate-action__playIcon text-green-009 hover-orange mt-15">
+                                                    <a href="#" class="d-2xl-flex items-center justify-center w-48 h-48 border-full bg-green-009">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
+                                                            <g clip-path="url(#clip0_101_3487)">
+                                                            <path d="M2.70859 0.35081C1.32565 -0.469107 0.201599 0.20102 0.201599 1.84599V13.9783C0.201599 15.6236 1.32565 16.2931 2.70859 15.4759L13.0039 9.39345C14.3874 8.57625 14.3874 7.24898 13.0039 6.43088L2.70859 0.35081Z" fill="white"/>
+                                                            </g>
+                                                            </svg>
+
+                                                    </a>
+                                                </div>
+                                                <!-- end play -->
+                
+                                           
+                                        </div>
+                                        <!-- end content -->
+                                    </div>
+                                </div> 
+                                <!-- end slide -->
+                                <!-- slide -->
+                                <div class="swiper-slide section-tertiary__slide">
+                                    <div class="article d-2xl-flex d-sm-block">
+                                        <!-- img -->
+                                        <div class="article__img flex-0 w-35">
+                                            <a href="#" class="image-wrapper-full border-10">
+                                                <img src="./images/3.jpg" alt="">
+                                                <img src="./images/Logo.png" alt="" class="article__note-icon">
+                                            </a>
+                                        </div>
+                                        <!-- end img -->
+                                        <!-- content -->
+                                        <div class="article__content flex-1">
+                                            <h2 class="article__title fix-text3 fs-32 lh-130 fw-700 text-white hover-orange tracking-064">
+                                                <a href="#">Chàng kỹ sư trẻ xây dựng kênh podcast về nông nghiệp sạch</a>
+                                            </h2>
+                                            <p class="article__des fix-text4 fs-15 font-arial lh-130 text-white my-15">
+                                                Là đất nước sản xuất muối tiềm năng, nhưng mỗi
+                                                năm Việt Nam vẫn phải nhập khẩu muối để đáp ứng
+                                                nhu cầu trong nước. Muối nội địa có giá thành
+                                                cao, chất lượng thấp, rất khó cạnh tranh với
+                                                muối nhập khẩu nên khó tiêu thụ.
+                                            </p>
+                                            <div class="cate-action d-2xl-flex items-center">
+                                                <!-- cate time -->
+                                                <div class="cate-action__time hover-orange-3">
+                                                    <a href="#" class="fs-14 d-2xl-flex items-center">
+                                                        <span class="text-white">Câu chuyện</span> 
+                                                        <span class="text-white">&nbsp;|&nbsp;1 giờ</span>
+                                                    </a>
+                                                </div>
+                                                <!-- end cate time -->
+                                                <!-- cmt count -->
+                                                <a href="#" class="cate-action__countCmt d-2xl-flex items-center ml-20 hover-orange-3">
+                                                    <div class="cate-action__countCmtIcon d-2xl-flex items-center text-gray-bd mr-4">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12" fill="none">
+                                                            <path d="M10.6667 1.33329C10.6667 0.966626 10.3667 0.666626 10 0.666626H0.666667C0.3 0.666626 0 0.966626 0 1.33329V8.66663C0 9.03329 0.3 9.33329 0.666667 9.33329H8.33333L10.6667 11.3333V1.33329Z" fill="currentColor"></path>
+                                                            </svg>
+                                                        </div>
+                                                        <span class="text-white fs-12">139</span>
+                                                    </a>
+                                                    <!-- end cmt count -->
+                                                </div>
+                                                <!-- play -->
+                                                <div class="cate-action__playIcon text-green-009 hover-orange mt-15">
+                                                    <a href="#" class="d-2xl-flex items-center justify-center w-48 h-48 border-full bg-green-009">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
+                                                            <g clip-path="url(#clip0_101_3487)">
+                                                            <path d="M2.70859 0.35081C1.32565 -0.469107 0.201599 0.20102 0.201599 1.84599V13.9783C0.201599 15.6236 1.32565 16.2931 2.70859 15.4759L13.0039 9.39345C14.3874 8.57625 14.3874 7.24898 13.0039 6.43088L2.70859 0.35081Z" fill="white"/>
+                                                            </g>
+                                                            </svg>
+
+                                                    </a>
+                                                </div>
+                                                <!-- end play -->
+                
+                                           
+                                        </div>
+                                        <!-- end content -->
+                                    </div>
+                                </div> 
+                                <!-- end slide -->
                             </div>
-                            <!-- end img -->
-                            <!-- content -->
-                            <div class="article__content flex-1 p-20">
-                                <h1 class="article__title fix-text3 fs-24 lh-130 fw-500 hover-orange tracking-04">
-                                    <a href="#">Vực dậy nghề muối, tăng thu nhập cho diêm
-                                        dân</a>
-                                </h1>
-                                <p class="article__des fix-text4 fs-15 font-arial lh-130 text-gray-44 my-15">
+
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- end tertiary -->
+
+
+            <!-- section secondary -->
+            <section class="wrapper section-secondary w-1080 mb-20">
+                <!-- heading -->
+                <h1 class="heading-primary d-2xl-flex items-center text-green-039 uppercase fs-24 fw-500 lh-130 tracking-04 mb-20">
+                    <img src="./images/mic.png" alt="">
+                    <a href="#">Các chương trình</a>
+                </h1>
+                <!-- end heading -->
+
+                <!-- container -->
+                <div class="container-secondary d-2xl-grid col-2 gap-30">
+                    <!-- item -->
+                    <div class="article border-10">
+                        <!-- img -->
+                        <div class="article__img relative">
+                            <a href="#" class="image-wrapper border-10">
+                                <img src="./images/3.jpg" alt="">
+                            </a>
+                            <div class="article__note border-10 bg-green-337 absolute p-12">
+                                <h4 class="article__note-title relative z-20 fix-text3 fs-16 lh-130 fw-900 hover-orange tracking-04 text-white">
+                                    <a href="#" class="d-2xl-block">Thời sự</a>
+                                </h4>
+                                <img src="./images/Logo.png" alt="" class="article__note-icon">
+                            </div>
+                        </div>
+                        <!-- end img -->
+                        <!-- content -->
+                        <div class="article__content bg-white py-20 px-10">
+                            <h2 class="article__cate fix-text2 fs-24 lh-130 fw-700 hover-orange tracking-04">
+                                <a href="#">Thời sự</a>
+                            </h2>
+                            <div class="article__des fs-15 font-arial lh-130 text-gray-44 py-15 border-e8">
+                                <p class="fix-text4">
                                     Là đất nước sản xuất muối tiềm năng, nhưng mỗi
                                     năm Việt Nam vẫn phải nhập khẩu muối để đáp ứng
                                     nhu cầu trong nước. Muối nội địa có giá thành
                                     cao, chất lượng thấp, rất khó cạnh tranh với
                                     muối nhập khẩu nên khó tiêu thụ.
                                 </p>
-                                <div class="cate-action d-2xl-flex items-center">
-                                    <!-- cate time -->
-                                    <div class="cate-action__time hover-orange-3">
-                                        <a href="#" class="fs-14 d-2xl-flex items-center">
-                                            <span class="text-gray-82">Câu chuyện</span> 
-                                            <span class="text-gray-bd">&nbsp;|&nbsp;1 giờ</span>
-                                        </a>
-                                    </div>
-                                    <!-- end cate time -->
-                                    <!-- play -->
-                                    <div class="cate-action__playIcon text-green-009 hover-orange ml-8">
-                                        <a href="#" class="d-2xl-flex items-center" >
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                                <circle opacity="0.5" cx="10" cy="10" r="10" fill="currentColor"/>
-                                                <path d="M7.44901 6.17693C6.64962 5.7624 5.99988 6.1012 5.99988 6.93286V13.0667C5.99988 13.8986 6.64962 14.2371 7.44901 13.8239L13.4001 10.7487C14.1998 10.3355 14.1998 9.66451 13.4001 9.25089L7.44901 6.17693Z" fill="currentColor"/>
-                                                </svg>
-                                        </a>
-                                    </div>
-                                    <!-- end play -->
-    
-                                    <!-- cmt count -->
-                                    <a href="#" class="cate-action__countCmt d-2xl-flex items-center ml-20 hover-orange-3">
-                                        <div class="cate-action__countCmtIcon d-2xl-flex items-center text-gray-bd mr-4">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12" fill="none">
-                                                <path d="M10.6667 1.33329C10.6667 0.966626 10.3667 0.666626 10 0.666626H0.666667C0.3 0.666626 0 0.966626 0 1.33329V8.66663C0 9.03329 0.3 9.33329 0.666667 9.33329H8.33333L10.6667 11.3333V1.33329Z" fill="currentColor"/>
-                                                </svg>
-                                        </div>
-                                        <span class="text-gray-66 fs-12">139</span>
-                                    </a>
-                                    <!-- end cmt count -->
-                                </div>
-                               
                             </div>
-                            <!-- end content -->
-                        </div>
-                    </div>
-                    <!-- end large -->
-
-                    <!-- small -->
-                    <div class="small">
-                        <!-- img -->
-                        <div class="article__img">
-                            <a href="#" class="image-wrapper border-10">
-                                <img src="./images/3.jpg" alt="">
-                            </a>
-                        </div>
-                        <!-- end img -->
-                        <!-- content -->
-                        <div class="article__content pt-10">
-                            <h3 class="article__title fix-text3 fs-16 lh-130 fw-500 hover-orange">
-                                <a href="#">Vực dậy nghề muối, tăng thu nhập cho diêm
-                                    dân</a>
+                            <h3 class="article__title fix-text3 fs-16 lh-130 fw-500 hover-orange py-15">
+                                <a href="#">Trung tâm nông nghiệp 20.000 m2 bỏ không</a>
                             </h3>
-                            <div class="cate-action d-2xl-flex items-center my-10">
+                            <div class="cate-action d-2xl-flex items-center">
                                 <!-- cate time -->
                                 <div class="cate-action__time hover-orange-3">
                                     <a href="#" class="fs-14 d-2xl-flex items-center">
-                                        <span class="text-gray-82">Câu chuyện</span> 
-                                        <span class="text-gray-bd">&nbsp;|&nbsp;1 giờ</span>
+                                        <span class="text-gray-bd">1 giờ</span>
                                     </a>
                                 </div>
                                 <!-- end cate time -->
                                 <!-- play -->
                                 <div class="cate-action__playIcon text-green-009 hover-orange ml-8">
-                                    <a href="#" class="d-2xl-flex items-center" >
+                                    <a href="#" class="d-2xl-flex items-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                            <circle opacity="0.5" cx="10" cy="10" r="10" fill="currentColor"/>
-                                            <path d="M7.44901 6.17693C6.64962 5.7624 5.99988 6.1012 5.99988 6.93286V13.0667C5.99988 13.8986 6.64962 14.2371 7.44901 13.8239L13.4001 10.7487C14.1998 10.3355 14.1998 9.66451 13.4001 9.25089L7.44901 6.17693Z" fill="currentColor"/>
+                                            <circle opacity="0.5" cx="10" cy="10" r="10" fill="currentColor"></circle>
+                                            <path d="M7.44901 6.17693C6.64962 5.7624 5.99988 6.1012 5.99988 6.93286V13.0667C5.99988 13.8986 6.64962 14.2371 7.44901 13.8239L13.4001 10.7487C14.1998 10.3355 14.1998 9.66451 13.4001 9.25089L7.44901 6.17693Z" fill="currentColor"></path>
                                             </svg>
                                     </a>
                                 </div>
@@ -1057,353 +1235,230 @@
                                 <a href="#" class="cate-action__countCmt d-2xl-flex items-center ml-20 hover-orange-3">
                                     <div class="cate-action__countCmtIcon d-2xl-flex items-center text-gray-bd mr-4">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12" fill="none">
-                                            <path d="M10.6667 1.33329C10.6667 0.966626 10.3667 0.666626 10 0.666626H0.666667C0.3 0.666626 0 0.966626 0 1.33329V8.66663C0 9.03329 0.3 9.33329 0.666667 9.33329H8.33333L10.6667 11.3333V1.33329Z" fill="currentColor"/>
+                                            <path d="M10.6667 1.33329C10.6667 0.966626 10.3667 0.666626 10 0.666626H0.666667C0.3 0.666626 0 0.966626 0 1.33329V8.66663C0 9.03329 0.3 9.33329 0.666667 9.33329H8.33333L10.6667 11.3333V1.33329Z" fill="currentColor"></path>
                                             </svg>
                                     </div>
                                     <span class="text-gray-66 fs-12">139</span>
                                 </a>
                                 <!-- end cmt count -->
                             </div>
-                            <p class="article__des fix-text4 fs-15 font-arial lh-140 text-gray-44">
-                                Là đất nước sản xuất muối tiềm năng, nhưng mỗi
-                                năm Việt Nam vẫn phải nhập khẩu muối để đáp ứng
-                                nhu cầu trong nước. Muối nội địa có giá thành
-                                cao, chất lượng thấp, rất khó cạnh tranh với
-                                muối nhập khẩu nên khó tiêu thụ.
-                            </p>
                            
                         </div>
                         <!-- end content -->
                     </div>
-                    <!-- end small -->
-                </section>
-                <!-- end section primary -->
+                    <!-- end item -->
+                    <!-- item -->
+                    <div class="article border-10">
+                        <!-- img -->
+                        <div class="article__img relative">
+                            <a href="#" class="image-wrapper border-10">
+                                <img src="./images/3.jpg" alt="">
+                            </a>
+                            <div class="article__note border-10 bg-green-337 absolute p-12">
+                                <h4 class="article__note-title relative z-20 fix-text3 fs-16 lh-130 fw-900 hover-orange tracking-04 text-white">
+                                    <a href="#" class="d-2xl-block">Thời sự</a>
+                                </h4>
+                                <img src="./images/Logo.png" alt="" class="article__note-icon">
+                            </div>
+                        </div>
+                        <!-- end img -->
+                        <!-- content -->
+                        <div class="article__content bg-white py-20 px-10">
+                            <h2 class="article__cate fix-text2 fs-24 lh-130 fw-700 hover-orange tracking-04">
+                                <a href="#">Thời sự</a>
+                            </h2>
+                            <div class="article__des fs-15 font-arial lh-130 text-gray-44 py-15 border-e8">
+                                <p class="fix-text4">
+                                    Là đất nước sản xuất muối tiềm năng, nhưng mỗi
+                                    năm Việt Nam vẫn phải nhập khẩu muối để đáp ứng
+                                    nhu cầu trong nước. Muối nội địa có giá thành
+                                    cao, chất lượng thấp, rất khó cạnh tranh với
+                                    muối nhập khẩu nên khó tiêu thụ.
+                                </p>
+                            </div>
+                            <h3 class="article__title fix-text3 fs-16 lh-130 fw-500 hover-orange py-15">
+                                <a href="#">Trung tâm nông nghiệp 20.000 m2 bỏ không</a>
+                            </h3>
+                            <div class="cate-action d-2xl-flex items-center">
+                                <!-- cate time -->
+                                <div class="cate-action__time hover-orange-3">
+                                    <a href="#" class="fs-14 d-2xl-flex items-center">
+                                        <span class="text-gray-bd">1 giờ</span>
+                                    </a>
+                                </div>
+                                <!-- end cate time -->
+                                <!-- play -->
+                                <div class="cate-action__playIcon text-green-009 hover-orange ml-8">
+                                    <a href="#" class="d-2xl-flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                            <circle opacity="0.5" cx="10" cy="10" r="10" fill="currentColor"></circle>
+                                            <path d="M7.44901 6.17693C6.64962 5.7624 5.99988 6.1012 5.99988 6.93286V13.0667C5.99988 13.8986 6.64962 14.2371 7.44901 13.8239L13.4001 10.7487C14.1998 10.3355 14.1998 9.66451 13.4001 9.25089L7.44901 6.17693Z" fill="currentColor"></path>
+                                            </svg>
+                                    </a>
+                                </div>
+                                <!-- end play -->
 
-                <!-- section secondary -->
-                <section class="section-secondary w-1080 mb-20">
-                    <!-- heading -->
-                    <h2 class="heading-primary d-2xl-flex items-center text-green-039 uppercase fs-24 fw-500 lh-130 tracking-04 mb-20">
-                        <img src="./images/mic.png" alt="">
-                        <a href="#">Các chương trình</a>
-                    </h2>
-                    <!-- end heading -->
-
-                    <!-- container -->
-                    <div class="container-secondary d-2xl-grid col-2 gap-30">
-                        <!-- item -->
-                        <div class="article border-10">
-                            <!-- img -->
-                            <div class="article__img relative">
-                                <a href="#" class="image-wrapper border-10">
-                                    <img src="./images/3.jpg" alt="">
+                                <!-- cmt count -->
+                                <a href="#" class="cate-action__countCmt d-2xl-flex items-center ml-20 hover-orange-3">
+                                    <div class="cate-action__countCmtIcon d-2xl-flex items-center text-gray-bd mr-4">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12" fill="none">
+                                            <path d="M10.6667 1.33329C10.6667 0.966626 10.3667 0.666626 10 0.666626H0.666667C0.3 0.666626 0 0.966626 0 1.33329V8.66663C0 9.03329 0.3 9.33329 0.666667 9.33329H8.33333L10.6667 11.3333V1.33329Z" fill="currentColor"></path>
+                                            </svg>
+                                    </div>
+                                    <span class="text-gray-66 fs-12">139</span>
                                 </a>
-                                <div class="article__note border-10 bg-green-337 absolute p-12">
-                                    <h4 class="article__note-title relative z-20 fix-text3 fs-16 lh-130 fw-900 hover-orange tracking-04 text-white">
-                                        <a href="#" class="d-2xl-block">Thời sự</a>
-                                    </h4>
-                                    <img src="./images/Logo.png" alt="" class="article__note-icon">
-                                </div>
+                                <!-- end cmt count -->
                             </div>
-                            <!-- end img -->
-                            <!-- content -->
-                            <div class="article__content bg-white py-20 px-10">
-                                <h2 class="article__cate fix-text2 fs-24 lh-130 fw-500 hover-orange tracking-04">
-                                    <a href="#">Thời sự</a>
-                                </h2>
-                                <div class="article__des fs-15 font-arial lh-130 text-gray-44 py-15 border-e8">
-                                    <p class="fix-text4">
-                                        Là đất nước sản xuất muối tiềm năng, nhưng mỗi
-                                        năm Việt Nam vẫn phải nhập khẩu muối để đáp ứng
-                                        nhu cầu trong nước. Muối nội địa có giá thành
-                                        cao, chất lượng thấp, rất khó cạnh tranh với
-                                        muối nhập khẩu nên khó tiêu thụ.
-                                    </p>
-                                </div>
-                                <h3 class="article__title fix-text3 fs-16 lh-130 fw-500 hover-orange py-15">
-                                    <a href="#">Trung tâm nông nghiệp 20.000 m2 bỏ không</a>
-                                </h3>
-                                <div class="cate-action d-2xl-flex items-center">
-                                    <!-- cate time -->
-                                    <div class="cate-action__time hover-orange-3">
-                                        <a href="#" class="fs-14 d-2xl-flex items-center">
-                                            <span class="text-gray-bd">1 giờ</span>
-                                        </a>
-                                    </div>
-                                    <!-- end cate time -->
-                                    <!-- play -->
-                                    <div class="cate-action__playIcon text-green-009 hover-orange ml-8">
-                                        <a href="#" class="d-2xl-flex items-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                                <circle opacity="0.5" cx="10" cy="10" r="10" fill="currentColor"></circle>
-                                                <path d="M7.44901 6.17693C6.64962 5.7624 5.99988 6.1012 5.99988 6.93286V13.0667C5.99988 13.8986 6.64962 14.2371 7.44901 13.8239L13.4001 10.7487C14.1998 10.3355 14.1998 9.66451 13.4001 9.25089L7.44901 6.17693Z" fill="currentColor"></path>
-                                                </svg>
-                                        </a>
-                                    </div>
-                                    <!-- end play -->
-    
-                                    <!-- cmt count -->
-                                    <a href="#" class="cate-action__countCmt d-2xl-flex items-center ml-20 hover-orange-3">
-                                        <div class="cate-action__countCmtIcon d-2xl-flex items-center text-gray-bd mr-4">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12" fill="none">
-                                                <path d="M10.6667 1.33329C10.6667 0.966626 10.3667 0.666626 10 0.666626H0.666667C0.3 0.666626 0 0.966626 0 1.33329V8.66663C0 9.03329 0.3 9.33329 0.666667 9.33329H8.33333L10.6667 11.3333V1.33329Z" fill="currentColor"></path>
-                                                </svg>
-                                        </div>
-                                        <span class="text-gray-66 fs-12">139</span>
-                                    </a>
-                                    <!-- end cmt count -->
-                                </div>
-                               
-                            </div>
-                            <!-- end content -->
+                           
                         </div>
-                        <!-- end item -->
-                        <!-- item -->
-                        <div class="article border-10">
-                            <!-- img -->
-                            <div class="article__img relative">
-                                <a href="#" class="image-wrapper border-10">
-                                    <img src="./images/3.jpg" alt="">
-                                </a>
-                                <div class="article__note border-10 bg-green-337 absolute p-12">
-                                    <h4 class="article__note-title relative z-20 fix-text3 fs-16 lh-130 fw-900 hover-orange tracking-04 text-white">
-                                        <a href="#" class="d-2xl-block">Thời sự</a>
-                                    </h4>
-                                    <img src="./images/Logo.png" alt="" class="article__note-icon">
-                                </div>
-                            </div>
-                            <!-- end img -->
-                            <!-- content -->
-                            <div class="article__content bg-white py-20 px-10">
-                                <h2 class="article__cate fix-text2 fs-24 lh-130 fw-500 hover-orange tracking-04">
-                                    <a href="#">Thời sự</a>
-                                </h2>
-                                <div class="article__des fs-15 font-arial lh-130 text-gray-44 py-15 border-e8">
-                                    <p class="fix-text4">
-                                        Là đất nước sản xuất muối tiềm năng, nhưng mỗi
-                                        năm Việt Nam vẫn phải nhập khẩu muối để đáp ứng
-                                        nhu cầu trong nước. Muối nội địa có giá thành
-                                        cao, chất lượng thấp, rất khó cạnh tranh với
-                                        muối nhập khẩu nên khó tiêu thụ.
-                                    </p>
-                                </div>
-                                <h3 class="article__title fix-text3 fs-16 lh-130 fw-500 hover-orange py-15">
-                                    <a href="#">Trung tâm nông nghiệp 20.000 m2 bỏ không</a>
-                                </h3>
-                                <div class="cate-action d-2xl-flex items-center">
-                                    <!-- cate time -->
-                                    <div class="cate-action__time hover-orange-3">
-                                        <a href="#" class="fs-14 d-2xl-flex items-center">
-                                            <span class="text-gray-bd">1 giờ</span>
-                                        </a>
-                                    </div>
-                                    <!-- end cate time -->
-                                    <!-- play -->
-                                    <div class="cate-action__playIcon text-green-009 hover-orange ml-8">
-                                        <a href="#" class="d-2xl-flex items-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                                <circle opacity="0.5" cx="10" cy="10" r="10" fill="currentColor"></circle>
-                                                <path d="M7.44901 6.17693C6.64962 5.7624 5.99988 6.1012 5.99988 6.93286V13.0667C5.99988 13.8986 6.64962 14.2371 7.44901 13.8239L13.4001 10.7487C14.1998 10.3355 14.1998 9.66451 13.4001 9.25089L7.44901 6.17693Z" fill="currentColor"></path>
-                                                </svg>
-                                        </a>
-                                    </div>
-                                    <!-- end play -->
-    
-                                    <!-- cmt count -->
-                                    <a href="#" class="cate-action__countCmt d-2xl-flex items-center ml-20 hover-orange-3">
-                                        <div class="cate-action__countCmtIcon d-2xl-flex items-center text-gray-bd mr-4">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12" fill="none">
-                                                <path d="M10.6667 1.33329C10.6667 0.966626 10.3667 0.666626 10 0.666626H0.666667C0.3 0.666626 0 0.966626 0 1.33329V8.66663C0 9.03329 0.3 9.33329 0.666667 9.33329H8.33333L10.6667 11.3333V1.33329Z" fill="currentColor"></path>
-                                                </svg>
-                                        </div>
-                                        <span class="text-gray-66 fs-12">139</span>
-                                    </a>
-                                    <!-- end cmt count -->
-                                </div>
-                               
-                            </div>
-                            <!-- end content -->
-                        </div>
-                        <!-- end item -->
-                        <!-- item -->
-                        <div class="article border-10">
-                            <!-- img -->
-                            <div class="article__img relative">
-                                <a href="#" class="image-wrapper border-10">
-                                    <img src="./images/3.jpg" alt="">
-                                </a>
-                                <div class="article__note border-10 bg-green-337 absolute p-12">
-                                    <h4 class="article__note-title relative z-20 fix-text3 fs-16 lh-130 fw-900 hover-orange tracking-04 text-white">
-                                        <a href="#" class="d-2xl-block">Thời sự</a>
-                                    </h4>
-                                    <img src="./images/Logo.png" alt="" class="article__note-icon">
-                                </div>
-                            </div>
-                            <!-- end img -->
-                            <!-- content -->
-                            <div class="article__content bg-white py-20 px-10">
-                                <h2 class="article__cate fix-text2 fs-24 lh-130 fw-500 hover-orange tracking-04">
-                                    <a href="#">Thời sự</a>
-                                </h2>
-                                <div class="article__des fs-15 font-arial lh-130 text-gray-44 py-15 border-e8">
-                                    <p class="fix-text4">
-                                        Là đất nước sản xuất muối tiềm năng, nhưng mỗi
-                                        năm Việt Nam vẫn phải nhập khẩu muối để đáp ứng
-                                        nhu cầu trong nước. Muối nội địa có giá thành
-                                        cao, chất lượng thấp, rất khó cạnh tranh với
-                                        muối nhập khẩu nên khó tiêu thụ.
-                                    </p>
-                                </div>
-                                <h3 class="article__title fix-text3 fs-16 lh-130 fw-500 hover-orange py-15">
-                                    <a href="#">Trung tâm nông nghiệp 20.000 m2 bỏ không</a>
-                                </h3>
-                                <div class="cate-action d-2xl-flex items-center">
-                                    <!-- cate time -->
-                                    <div class="cate-action__time hover-orange-3">
-                                        <a href="#" class="fs-14 d-2xl-flex items-center">
-                                            <span class="text-gray-bd">1 giờ</span>
-                                        </a>
-                                    </div>
-                                    <!-- end cate time -->
-                                    <!-- play -->
-                                    <div class="cate-action__playIcon text-green-009 hover-orange ml-8">
-                                        <a href="#" class="d-2xl-flex items-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                                <circle opacity="0.5" cx="10" cy="10" r="10" fill="currentColor"></circle>
-                                                <path d="M7.44901 6.17693C6.64962 5.7624 5.99988 6.1012 5.99988 6.93286V13.0667C5.99988 13.8986 6.64962 14.2371 7.44901 13.8239L13.4001 10.7487C14.1998 10.3355 14.1998 9.66451 13.4001 9.25089L7.44901 6.17693Z" fill="currentColor"></path>
-                                                </svg>
-                                        </a>
-                                    </div>
-                                    <!-- end play -->
-    
-                                    <!-- cmt count -->
-                                    <a href="#" class="cate-action__countCmt d-2xl-flex items-center ml-20 hover-orange-3">
-                                        <div class="cate-action__countCmtIcon d-2xl-flex items-center text-gray-bd mr-4">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12" fill="none">
-                                                <path d="M10.6667 1.33329C10.6667 0.966626 10.3667 0.666626 10 0.666626H0.666667C0.3 0.666626 0 0.966626 0 1.33329V8.66663C0 9.03329 0.3 9.33329 0.666667 9.33329H8.33333L10.6667 11.3333V1.33329Z" fill="currentColor"></path>
-                                                </svg>
-                                        </div>
-                                        <span class="text-gray-66 fs-12">139</span>
-                                    </a>
-                                    <!-- end cmt count -->
-                                </div>
-                               
-                            </div>
-                            <!-- end content -->
-                        </div>
-                        <!-- end item -->
-                        <!-- item -->
-                        <div class="article border-10">
-                            <!-- img -->
-                            <div class="article__img relative">
-                                <a href="#" class="image-wrapper border-10">
-                                    <img src="./images/3.jpg" alt="">
-                                </a>
-                                <div class="article__note border-10 bg-green-337 absolute p-12">
-                                    <h4 class="article__note-title relative z-20 fix-text3 fs-16 lh-130 fw-900 hover-orange tracking-04 text-white">
-                                        <a href="#" class="d-2xl-block">Thời sự</a>
-                                    </h4>
-                                    <img src="./images/Logo.png" alt="" class="article__note-icon">
-                                </div>
-                            </div>
-                            <!-- end img -->
-                            <!-- content -->
-                            <div class="article__content bg-white py-20 px-10">
-                                <h2 class="article__cate fix-text2 fs-24 lh-130 fw-500 hover-orange tracking-04">
-                                    <a href="#">Thời sự</a>
-                                </h2>
-                                <div class="article__des fs-15 font-arial lh-130 text-gray-44 py-15 border-e8">
-                                    <p class="fix-text4">
-                                        Là đất nước sản xuất muối tiềm năng, nhưng mỗi
-                                        năm Việt Nam vẫn phải nhập khẩu muối để đáp ứng
-                                        nhu cầu trong nước. Muối nội địa có giá thành
-                                        cao, chất lượng thấp, rất khó cạnh tranh với
-                                        muối nhập khẩu nên khó tiêu thụ.
-                                    </p>
-                                </div>
-                                <h3 class="article__title fix-text3 fs-16 lh-130 fw-500 hover-orange py-15">
-                                    <a href="#">Trung tâm nông nghiệp 20.000 m2 bỏ không</a>
-                                </h3>
-                                <div class="cate-action d-2xl-flex items-center">
-                                    <!-- cate time -->
-                                    <div class="cate-action__time hover-orange-3">
-                                        <a href="#" class="fs-14 d-2xl-flex items-center">
-                                            <span class="text-gray-bd">1 giờ</span>
-                                        </a>
-                                    </div>
-                                    <!-- end cate time -->
-                                    <!-- play -->
-                                    <div class="cate-action__playIcon text-green-009 hover-orange ml-8">
-                                        <a href="#" class="d-2xl-flex items-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                                <circle opacity="0.5" cx="10" cy="10" r="10" fill="currentColor"></circle>
-                                                <path d="M7.44901 6.17693C6.64962 5.7624 5.99988 6.1012 5.99988 6.93286V13.0667C5.99988 13.8986 6.64962 14.2371 7.44901 13.8239L13.4001 10.7487C14.1998 10.3355 14.1998 9.66451 13.4001 9.25089L7.44901 6.17693Z" fill="currentColor"></path>
-                                                </svg>
-                                        </a>
-                                    </div>
-                                    <!-- end play -->
-    
-                                    <!-- cmt count -->
-                                    <a href="#" class="cate-action__countCmt d-2xl-flex items-center ml-20 hover-orange-3">
-                                        <div class="cate-action__countCmtIcon d-2xl-flex items-center text-gray-bd mr-4">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12" fill="none">
-                                                <path d="M10.6667 1.33329C10.6667 0.966626 10.3667 0.666626 10 0.666626H0.666667C0.3 0.666626 0 0.966626 0 1.33329V8.66663C0 9.03329 0.3 9.33329 0.666667 9.33329H8.33333L10.6667 11.3333V1.33329Z" fill="currentColor"></path>
-                                                </svg>
-                                        </div>
-                                        <span class="text-gray-66 fs-12">139</span>
-                                    </a>
-                                    <!-- end cmt count -->
-                                </div>
-                               
-                            </div>
-                            <!-- end content -->
-                        </div>
-                        <!-- end item -->
+                        <!-- end content -->
                     </div>
-                    <!-- end container -->
-                </section>
-                <!-- end section secondary -->
+                    <!-- end item -->
+                    <!-- item -->
+                    <div class="article border-10">
+                        <!-- img -->
+                        <div class="article__img relative">
+                            <a href="#" class="image-wrapper border-10">
+                                <img src="./images/3.jpg" alt="">
+                            </a>
+                            <div class="article__note border-10 bg-green-337 absolute p-12">
+                                <h4 class="article__note-title relative z-20 fix-text3 fs-16 lh-130 fw-900 hover-orange tracking-04 text-white">
+                                    <a href="#" class="d-2xl-block">Thời sự</a>
+                                </h4>
+                                <img src="./images/Logo.png" alt="" class="article__note-icon">
+                            </div>
+                        </div>
+                        <!-- end img -->
+                        <!-- content -->
+                        <div class="article__content bg-white py-20 px-10">
+                            <h2 class="article__cate fix-text2 fs-24 lh-130 fw-700 hover-orange tracking-04">
+                                <a href="#">Thời sự</a>
+                            </h2>
+                            <div class="article__des fs-15 font-arial lh-130 text-gray-44 py-15 border-e8">
+                                <p class="fix-text4">
+                                    Là đất nước sản xuất muối tiềm năng, nhưng mỗi
+                                    năm Việt Nam vẫn phải nhập khẩu muối để đáp ứng
+                                    nhu cầu trong nước. Muối nội địa có giá thành
+                                    cao, chất lượng thấp, rất khó cạnh tranh với
+                                    muối nhập khẩu nên khó tiêu thụ.
+                                </p>
+                            </div>
+                            <h3 class="article__title fix-text3 fs-16 lh-130 fw-500 hover-orange py-15">
+                                <a href="#">Trung tâm nông nghiệp 20.000 m2 bỏ không</a>
+                            </h3>
+                            <div class="cate-action d-2xl-flex items-center">
+                                <!-- cate time -->
+                                <div class="cate-action__time hover-orange-3">
+                                    <a href="#" class="fs-14 d-2xl-flex items-center">
+                                        <span class="text-gray-bd">1 giờ</span>
+                                    </a>
+                                </div>
+                                <!-- end cate time -->
+                                <!-- play -->
+                                <div class="cate-action__playIcon text-green-009 hover-orange ml-8">
+                                    <a href="#" class="d-2xl-flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                            <circle opacity="0.5" cx="10" cy="10" r="10" fill="currentColor"></circle>
+                                            <path d="M7.44901 6.17693C6.64962 5.7624 5.99988 6.1012 5.99988 6.93286V13.0667C5.99988 13.8986 6.64962 14.2371 7.44901 13.8239L13.4001 10.7487C14.1998 10.3355 14.1998 9.66451 13.4001 9.25089L7.44901 6.17693Z" fill="currentColor"></path>
+                                            </svg>
+                                    </a>
+                                </div>
+                                <!-- end play -->
 
-
-                <!-- test images -->
-                <div class="masonry-wrapper w-1080">
-                    <div class="exp_box_3_image expNoEdit">  
-                        <div class="exp_wrap expEdit">  
-                            <figure class="expNoEdit">
-                                <img src="./images/1.jpg" >
-                            </figure>  
-                            <figure class="expNoEdit">
-                                <img src="./images/2.jpg" >
-                            </figure>  
-                            <figure class="expNoEdit">
-                                <img src="./images/3.jpg" >
-                            </figure>
-                        </div>  
+                                <!-- cmt count -->
+                                <a href="#" class="cate-action__countCmt d-2xl-flex items-center ml-20 hover-orange-3">
+                                    <div class="cate-action__countCmtIcon d-2xl-flex items-center text-gray-bd mr-4">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12" fill="none">
+                                            <path d="M10.6667 1.33329C10.6667 0.966626 10.3667 0.666626 10 0.666626H0.666667C0.3 0.666626 0 0.966626 0 1.33329V8.66663C0 9.03329 0.3 9.33329 0.666667 9.33329H8.33333L10.6667 11.3333V1.33329Z" fill="currentColor"></path>
+                                            </svg>
+                                    </div>
+                                    <span class="text-gray-66 fs-12">139</span>
+                                </a>
+                                <!-- end cmt count -->
+                            </div>
+                           
+                        </div>
+                        <!-- end content -->
                     </div>
+                    <!-- end item -->
+                    <!-- item -->
+                    <div class="article border-10">
+                        <!-- img -->
+                        <div class="article__img relative">
+                            <a href="#" class="image-wrapper border-10">
+                                <img src="./images/3.jpg" alt="">
+                            </a>
+                            <div class="article__note border-10 bg-green-337 absolute p-12">
+                                <h4 class="article__note-title relative z-20 fix-text3 fs-16 lh-130 fw-900 hover-orange tracking-04 text-white">
+                                    <a href="#" class="d-2xl-block">Thời sự</a>
+                                </h4>
+                                <img src="./images/Logo.png" alt="" class="article__note-icon">
+                            </div>
+                        </div>
+                        <!-- end img -->
+                        <!-- content -->
+                        <div class="article__content bg-white py-20 px-10">
+                            <h2 class="article__cate fix-text2 fs-24 lh-130 fw-700 hover-orange tracking-04">
+                                <a href="#">Thời sự</a>
+                            </h2>
+                            <div class="article__des fs-15 font-arial lh-130 text-gray-44 py-15 border-e8">
+                                <p class="fix-text4">
+                                    Là đất nước sản xuất muối tiềm năng, nhưng mỗi
+                                    năm Việt Nam vẫn phải nhập khẩu muối để đáp ứng
+                                    nhu cầu trong nước. Muối nội địa có giá thành
+                                    cao, chất lượng thấp, rất khó cạnh tranh với
+                                    muối nhập khẩu nên khó tiêu thụ.
+                                </p>
+                            </div>
+                            <h3 class="article__title fix-text3 fs-16 lh-130 fw-500 hover-orange py-15">
+                                <a href="#">Trung tâm nông nghiệp 20.000 m2 bỏ không</a>
+                            </h3>
+                            <div class="cate-action d-2xl-flex items-center">
+                                <!-- cate time -->
+                                <div class="cate-action__time hover-orange-3">
+                                    <a href="#" class="fs-14 d-2xl-flex items-center">
+                                        <span class="text-gray-bd">1 giờ</span>
+                                    </a>
+                                </div>
+                                <!-- end cate time -->
+                                <!-- play -->
+                                <div class="cate-action__playIcon text-green-009 hover-orange ml-8">
+                                    <a href="#" class="d-2xl-flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                            <circle opacity="0.5" cx="10" cy="10" r="10" fill="currentColor"></circle>
+                                            <path d="M7.44901 6.17693C6.64962 5.7624 5.99988 6.1012 5.99988 6.93286V13.0667C5.99988 13.8986 6.64962 14.2371 7.44901 13.8239L13.4001 10.7487C14.1998 10.3355 14.1998 9.66451 13.4001 9.25089L7.44901 6.17693Z" fill="currentColor"></path>
+                                            </svg>
+                                    </a>
+                                </div>
+                                <!-- end play -->
 
-                    <div class="exp_box_2_image expNoEdit">  
-                        <div class="exp_wrap expEdit">  
-                            <figure class="expNoEdit">
-                                <img src="./images/2.jpg" >
-                            </figure>  
-                            <figure class="expNoEdit">
-                                <img src="./images/3.jpg" >
-                            </figure>  
-                        </div>  
+                                <!-- cmt count -->
+                                <a href="#" class="cate-action__countCmt d-2xl-flex items-center ml-20 hover-orange-3">
+                                    <div class="cate-action__countCmtIcon d-2xl-flex items-center text-gray-bd mr-4">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12" fill="none">
+                                            <path d="M10.6667 1.33329C10.6667 0.966626 10.3667 0.666626 10 0.666626H0.666667C0.3 0.666626 0 0.966626 0 1.33329V8.66663C0 9.03329 0.3 9.33329 0.666667 9.33329H8.33333L10.6667 11.3333V1.33329Z" fill="currentColor"></path>
+                                            </svg>
+                                    </div>
+                                    <span class="text-gray-66 fs-12">139</span>
+                                </a>
+                                <!-- end cmt count -->
+                            </div>
+                           
+                        </div>
+                        <!-- end content -->
                     </div>
+                    <!-- end item -->
                 </div>
-                <!-- end test images -->
+                <!-- end container -->
+            </section>
+            <!-- end section secondary -->
 
-                <!-- ads center -->
-                <div class="ads-center py-20">
-                    <img src="./images/ads_center.png" alt="">
-                </div>
-                <!-- end ads center-->
+            <!-- ads center -->
+            <div class="ads-center py-20">
+                <img src="./images/ads_center.png" alt="">
             </div>
-            <!-- end pc -->
+            <!-- end ads center-->
 
-            <!-- mobile -->
-            <div class="d-2xl-none d-lg-block"></div>
-            <!-- end mobile -->
         </main>
         <!-- end main -->
         <!-- footer -->
@@ -1437,7 +1492,7 @@
                 <!-- end mở rộng -->
 
                 <!-- menu footer -->
-                <ul class="footer-menu d-2xl-flex items-center justify-between pb-20">
+                <ul class="footer-menu d-2xl-flex d-lg-none items-center justify-between pb-20">
                     <li class="footer-menu__item text-gray-55 fs-14 fw-700 lh-130 uppercase tracking-075 hover-orange">
                         <a href="#">Thời sự</a>
                     </li>
@@ -1494,7 +1549,7 @@
 
                 <!-- info -->
                 <div
-                    class="footer-info d-2xl-flex d-lg-block justify-between fs-12 text-gray-55 font-arial lh-22 border-e5 py-30"
+                    class="footer-info d-2xl-flex d-lg-block justify-between fs-12 text-gray-55 font-arial lh-22 py-30"
                 >
                     <div class="footer-info-left">
                         <p>
@@ -1536,232 +1591,8 @@
                     </p>
                 </div>
                 <!-- mobile -->
-                <div class="d-2xl-none d-lg-block">
-                    <!-- đăng ký nhận email -->
-                    <div class="register-email mb-20">
-                        <p
-                            class="register-email__text fs-14 font-arial lh-130 mb-8 text-center text-black"
-                        >
-                            Đăng ký nhận Email
-                        </p>
-                        <form action="" class="register-email__form">
-                            <div class="register-email__group">
-                                <div class="register-email__icon text-gray-4f">
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="15"
-                                        height="15"
-                                        viewBox="0 0 15 15"
-                                        fill="none"
-                                    >
-                                        <path
-                                            d="M14.375 1.25H0.625C0.25 1.25 0 1.5 0 1.875V13.125C0 13.5 0.25 13.75 0.625 13.75H14.375C14.75 13.75 15 13.5 15 13.125V1.875C15 1.5 14.75 1.25 14.375 1.25ZM12.9375 4.25L7.9375 8.625C7.8125 8.6875 7.625 8.75 7.5 8.75C7.375 8.75 7.1875 8.6875 7.0625 8.625L2.0625 4.25C1.8125 4 1.75 3.625 2 3.375C2.25 3.125 2.625 3.0625 2.875 3.3125L7.4375 7.3125L12 3.3125C12.25 3.0625 12.625 3.125 12.875 3.375C13.1875 3.625 13.1875 4 12.9375 4.25Z"
-                                            fill="currentColor"
-                                        ></path>
-                                    </svg>
-                                </div>
-                                <input
-                                    type="text"
-                                    class="register-email__input"
-                                    placeholder="Nhập email của bạn"
-                                />
-                                <input
-                                    type="submit"
-                                    class="register-email__btn hover-orange"
-                                    value="Đăng ký"
-                                />
-                            </div>
-                        </form>
-                    </div>
-                    <!-- end đăng ký nhận email -->
-                    <!-- social footer -->
-                    <ul
-                        class="footer-social d-2xl-flex items-center justify-center mb-20"
-                    >
-                        <!-- item -->
-                        <li class="item">
-                            <a
-                                href="#"
-                                class="link h-full d-2xl-flex items-center justify-center hover-orange-2"
-                            >
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="8"
-                                    height="15"
-                                    viewBox="0 0 8 15"
-                                    fill="none"
-                                >
-                                    <g clip-path="url(#clip0_1_1451)">
-                                        <path
-                                            opacity="0.75"
-                                            d="M7.3 4.79991L7 7.19991H5V14.3999H2.3V7.19991H0.5V4.79991H2.3V3.29991C2.3 2.39991 2.5 1.59991 2.9 0.799907C3.5 0.199907 4.4 -0.100093 5.2 -9.29292e-05H7.2V2.49991H6C5.7 2.39991 5.4 2.49991 5.2 2.69991C5 2.99991 5 3.29991 5 3.49991V4.69991H7.3V4.79991Z"
-                                            fill="#3B589C"
-                                        />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_1_1451">
-                                            <rect
-                                                width="6.8"
-                                                height="14.5"
-                                                fill="white"
-                                                transform="translate(0.5)"
-                                            />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                            </a>
-                        </li>
-                        <!-- end item -->
-                        <!-- item -->
-                        <li class="item">
-                            <a
-                                href="#"
-                                class="link h-full d-2xl-flex items-center justify-center hover-orange-2"
-                            >
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="15"
-                                    height="12"
-                                    viewBox="0 0 15 12"
-                                    fill="none"
-                                >
-                                    <g clip-path="url(#clip0_1_1455)">
-                                        <path
-                                            opacity="0.75"
-                                            d="M13.4 3C13.4 3.1 13.4 3.3 13.4 3.4C13.4 5.5 12.6 7.6 11.1 9.2C9.6 11 7.3 11.9 5 11.8C3.4 11.8 1.8 11.3 0.5 10.5C0.7 10.5 1 10.5 1.2 10.5C2.5 10.5 3.8 10.1 4.8 9.2C4.2 9.2 3.6 9 3.1 8.6C2.6 8.2 2.3 7.7 2.1 7.1C2.3 7.1 2.5 7.1 2.7 7.1C3 7.1 3.2 7.1 3.5 7C2.8 6.9 2.2 6.6 1.7 6C1.3 5.5 1 4.9 1.1 4.2C1.5 4.4 1.9 4.5 2.4 4.5C1.6 4 1 3.1 1.1 2.1C1.1 1.6 1.3 1.1 1.5 0.6C3 2.5 5.2 3.6 7.6 3.7C7.5 3.4 7.5 3.2 7.5 3C7.5 1.4 8.8 0 10.5 0C11.3 0 12.1 0.3 12.7 0.9C13.4 0.8 14 0.6 14.6 0.2C14.4 0.9 13.9 1.5 13.3 1.8C13.9 1.7 14.4 1.6 15 1.3C14.5 2 14 2.5 13.4 3Z"
-                                            fill="#55ACEE"
-                                        />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_1_1455">
-                                            <rect
-                                                width="14.4"
-                                                height="11.7"
-                                                fill="white"
-                                                transform="translate(0.5)"
-                                            />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                            </a>
-                        </li>
-                        <!-- end item -->
-                        <!-- item -->
-                        <li class="item">
-                            <a
-                                href="#"
-                                class="link h-full d-2xl-flex items-center justify-center hover-orange-2"
-                            >
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="18"
-                                    height="16"
-                                    viewBox="0 0 18 16"
-                                    fill="none"
-                                >
-                                    <path
-                                        d="M4.29979 16V5.20483H0.711696V16H4.29979ZM2.50621 3.73004C3.75744 3.73004 4.53627 2.9011 4.53627 1.8652C4.51296 0.805935 3.75748 0 2.52995 0C1.30261 0 0.5 0.805951 0.5 1.8652C0.5 2.90115 1.27864 3.73004 2.48278 3.73004H2.50609H2.50621ZM6.28579 16H9.87388V9.97145C9.87388 9.64881 9.89719 9.3265 9.99194 9.09586C10.2513 8.45124 10.8417 7.78359 11.8329 7.78359C13.1313 7.78359 13.6507 8.77354 13.6507 10.2247V15.9999H17.2386V9.81007C17.2386 6.49422 15.4684 4.95139 13.1077 4.95139C11.172 4.95139 10.3222 6.03334 9.85001 6.77025H9.87396V5.2046H6.28587C6.33295 6.21756 6.28587 15.9998 6.28587 15.9998L6.28579 16Z"
-                                        fill="#0073B1"
-                                    />
-                                </svg>
-                            </a>
-                        </li>
-                        <!-- end item -->
-                        <!-- item -->
-                        <li class="item">
-                            <a
-                                href="#"
-                                class="link h-full d-2xl-flex items-center justify-center hover-orange-2"
-                            >
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="17"
-                                    height="14"
-                                    viewBox="0 0 17 14"
-                                    fill="none"
-                                >
-                                    <path
-                                        d="M16.4 2.6H13.6V0H13V2.6H10.3V3.4H13V6H13.6V3.4H16.4V2.6Z"
-                                        fill="#F61C0D"
-                                    />
-                                    <path
-                                        d="M7.3 7.7C6.9 7.5 6.2 6.8 6.2 6.4C6.2 6 6.3 5.7 7 5.2C7.7 4.7 8.2 4 8.2 3.1C8.2 2 7.7 1 6.9 0.7H8.2L9.1 0H4.9C3 0 1.3 1.4 1.3 3.1C1.3 4.8 2.6 6.1 4.5 6.1H4.9C4.7 6.3 4.7 6.5 4.7 6.8C4.7 7.3 5 7.6 5.3 8H4.6C2.3 8 0.5 9.5 0.5 11C0.5 12.5 2.5 13.5 4.8 13.5C7.4 13.5 8.9 12 8.9 10.5C8.8 9.2 8.4 8.5 7.3 7.7ZM5.1 5.6C4 5.6 3 4.4 2.8 3C2.6 1.6 3.3 0.5 4.4 0.5C5.5 0.5 6.5 1.7 6.7 3.1C6.9 4.5 6.2 5.7 5.1 5.6ZM4.7 12.8C3.1 12.8 1.9 11.8 1.9 10.6C1.9 9.4 3.3 8.4 4.9 8.4C5.3 8.4 5.6 8.5 5.9 8.6C6.8 9.2 7.4 9.5 7.6 10.2C7.6 10.3 7.7 10.5 7.7 10.6C7.7 11.8 6.9 12.8 4.7 12.8Z"
-                                        fill="#F61C0D"
-                                    />
-                                </svg>
-                            </a>
-                        </li>
-                        <!-- end item -->
-                        <!-- item -->
-                        <li class="item">
-                            <a
-                                href="#"
-                                class="link h-full d-2xl-flex items-center justify-center hover-orange-2 js__searchMb"
-                            >
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="14"
-                                    height="14"
-                                    viewBox="0 0 14 14"
-                                    fill="none"
-                                >
-                                    <path
-                                        d="M12.5 13.0001L9.29998 9.80004M10.7858 6.14288C10.7858 8.98322 8.48322 11.2858 5.64288 11.2858C2.80255 11.2858 0.5 8.98322 0.5 6.14288C0.5 3.30255 2.80255 1 5.64288 1C8.48322 1 10.7858 3.30255 10.7858 6.14288Z"
-                                        stroke="#284FA7"
-                                        stroke-miterlimit="10"
-                                        stroke-linecap="square"
-                                    />
-                                </svg>
-                            </a>
-                        </li>
-                        <!-- end item -->
-                    </ul>
-                    <!-- end social footer -->
-
-                    <!-- hotline -->
-                    <div class="hotline">
-                        <a
-                            href="tel:012345678"
-                            class="d-2xl-flex items-center justify-center hover-orange"
-                        >
-                            <div
-                                class="hotline-icon d-2xl-flex items-center justify-center text-blue-152 mr-10"
-                            >
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="15"
-                                    height="15"
-                                    viewBox="0 0 15 15"
-                                    fill="none"
-                                >
-                                    <g clip-path="url(#clip0_1_550)">
-                                        <path
-                                            d="M13.2556 11.2133L10.4406 9.76293C10.0452 9.55799 9.55498 9.66834 9.28613 10.0152L8.25819 11.3394C7.24607 10.8034 6.48698 10.2832 5.60137 9.40034C4.6525 8.45447 4.14644 7.682 3.64038 6.7046L4.95297 5.6799C5.30089 5.4119 5.41159 4.9232 5.20601 4.52909L3.75108 1.73876C3.49805 1.25005 2.86547 1.09241 2.40685 1.39194L0.619818 2.59004C0.208642 2.87381 -0.0285743 3.34674 0.00305455 3.83545C0.0346834 4.33991 0.0979412 4.98626 0.224457 5.42767C0.746333 7.42977 1.99567 9.49493 3.76689 11.2448C5.52229 12.9947 7.59399 14.2401 9.60242 14.7761C10.0452 14.8864 10.6936 14.9495 11.2155 14.9968C11.7216 15.0283 12.2118 14.7918 12.4806 14.3662L13.6509 12.5533C13.9039 12.0803 13.73 11.4655 13.2556 11.2133Z"
-                                            fill="currentColor"
-                                        ></path>
-                                        <path
-                                            d="M7.56245 5.8851C7.91037 5.97969 8.25829 6.16887 8.52713 6.45263C8.81179 6.73639 9.00156 7.06745 9.09645 7.41427C9.17552 7.69803 9.44437 7.88721 9.74484 7.87144H9.8081C10.2193 7.85568 10.5197 7.46156 10.409 7.06745C10.2509 6.49992 9.95043 5.94816 9.49181 5.50675C9.03319 5.04958 8.4955 4.75005 7.92618 4.59241C7.53082 4.48206 7.13546 4.78158 7.11965 5.19146V5.25452C7.08802 5.53828 7.27779 5.80628 7.56245 5.8851Z"
-                                            fill="currentColor"
-                                        ></path>
-                                        <path
-                                            d="M7.75224 3.6149C8.62203 3.77255 9.4602 4.18243 10.1244 4.84454C10.8044 5.52241 11.2156 6.34217 11.3579 7.20922C11.4212 7.52452 11.7059 7.76099 12.038 7.74522H12.0854C12.4808 7.72946 12.7654 7.36687 12.6863 6.98852C12.4808 5.85347 11.9431 4.76572 11.0733 3.8829C10.1877 3.00008 9.11228 2.46409 7.95782 2.27491C7.57828 2.21185 7.21454 2.49562 7.19873 2.87397V2.92126C7.19873 3.26808 7.43595 3.55184 7.75224 3.6149Z"
-                                            fill="currentColor"
-                                        ></path>
-                                        <path
-                                            d="M14.9952 6.89391C14.758 5.2071 13.9989 3.58335 12.7021 2.29066C11.4053 0.997961 9.77646 0.241262 8.08431 0.00479282C7.70477 -0.0425009 7.35685 0.225497 7.34103 0.619612V0.68267C7.32522 1.02949 7.57825 1.31325 7.91035 1.36055C9.31784 1.54972 10.6621 2.19607 11.7374 3.26806C12.8128 4.34005 13.4454 5.69581 13.651 7.08309C13.6984 7.41415 13.9831 7.66638 14.331 7.65061H14.3943C14.758 7.61908 15.0427 7.27226 14.9952 6.89391Z"
-                                            fill="currentColor"
-                                        ></path>
-                                    </g>
-                                </svg>
-                            </div>
-
-                            <div class="font-arial fs-14 lh-140">
-                                <p class="text-left">Hotline:</p>
-                                <p class="fw-700">0983 970 780</p>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- end hotline -->
+                <div class="d-2xl-none d-lg-flex items-center justify-center">
+                    <img src="./images/confirm_login.png" alt="">
                 </div>
                 <!-- end mobile -->
 
@@ -1791,6 +1622,7 @@
             <!-- end back top -->
         </footer>
         <!-- end footer -->
+        <script src="./lib/swiper/swiper-bundle.min.js"></script>
         <script src="./js/main.js"></script>
         <script>
        

@@ -82,6 +82,9 @@ img {
     font-family: "Arial", sans-serif;
 }
 /*===========================================================================*/
+.w-48 {
+    width: 3rem;
+}
 .w-778 {
     max-width: 48.625rem;
     margin: 0 auto;
@@ -271,6 +274,9 @@ img {
 .text-green-337 {
     color: #337357;
 }
+.text-green-096 {
+    color: #096639;
+}
 .text-white-f1 {
     color: #f1f9ff;
 }
@@ -298,6 +304,9 @@ img {
 }
 .bg-green-009 {
     background-color: #00942c;
+}
+.bg-green-096 {
+    background-color: #096639;
 }
 .bg-gray-e7f {
     background-color: #e7f1f9;
@@ -906,6 +915,9 @@ img {
 .lh-46 {
     line-height: 2.875rem;
 }
+.lh-120 {
+    line-height: 120%;
+}
 .lh-130 {
     line-height: 130%;
 }
@@ -1026,6 +1038,9 @@ img {
 .tracking-04 {
     letter-spacing: 0.4px;
 }
+.tracking-064 {
+    letter-spacing: 0.64px;
+}
 .tracking-075 {
     letter-spacing: 0.75px;
 }
@@ -1085,11 +1100,12 @@ img {
     &:hover {
         > a {
             color: red;
-            transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1);
+            transition: all 0.2s ease;
         }
 
         circle {
             fill: currentColor;
+            transition: all 0.2s ease;
         }
     }
 }
@@ -1097,21 +1113,22 @@ img {
     // circle {
     //     fill: transparent;
     // }
-    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1);
     &:hover {
         span,
         svg {
             color: red;
+            transition: all 0.2s ease;
         }
 
         circle {
             fill: currentColor;
+            transition: all 0.2s ease;
         }
     }
 }
 .hover-orange-2 {
-    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1);
     &:hover {
+        transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1);
         color: red;
         background-color: rgba($color: red, $alpha: 0.1);
         border-color: currentColor;
@@ -1120,6 +1137,9 @@ img {
 
 .border-e8 {
     border-bottom: 1px solid #e8e8ea;
+}
+.border-e803 {
+    border-bottom: 1px solid rgba($color: #e8e8ea, $alpha: 0.3);
 }
 .border-9103 {
     border-bottom: 1px solid rgba($color: #91aec1, $alpha: 0.3);

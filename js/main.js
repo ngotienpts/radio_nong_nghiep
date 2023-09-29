@@ -23,6 +23,9 @@ document.addEventListener("DOMContentLoaded", function () {
     var playsRadio = document.querySelectorAll(".js__playRadio");
     var volumsRadio = document.querySelectorAll(".js__radioVolum");
 
+    // show popup image
+    var oneSlides = document.querySelectorAll(".js__swiperItemsContainer");
+
     const app = {
         // su ly cac su kien
         handleEvent: function () {
@@ -158,7 +161,25 @@ document.addEventListener("DOMContentLoaded", function () {
                 });
             }
         },
-
+        // slider one item
+        sliderOneItems: function () {
+            oneSlides.forEach((item) => {
+                var next = item.querySelector(".swiper-button-next");
+                var prev = item.querySelector(".swiper-button-prev");
+                var slider = item.querySelector(".js__swiperItems");
+                new Swiper(slider, {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                    slidesPerGroup: 1,
+                    autoHeight: true,
+                    // effect: "fade",
+                    navigation: {
+                        nextEl: next,
+                        prevEl: prev,
+                    },
+                });
+            });
+        },
         // scroll top
         scrollFunc: function () {
             if (backTop) {
@@ -189,6 +210,8 @@ document.addEventListener("DOMContentLoaded", function () {
             this.handleEvent();
             // window scroll
             this.windowScroll();
+            // slider one item
+            this.sliderOneItems();
         },
     };
 
