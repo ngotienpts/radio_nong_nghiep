@@ -222,7 +222,7 @@
     padding-top: 1.875rem;
   }
   .cate-primary__note .article__note-title {
-    font-size: 2.25rem;
+    font-size: 1.5rem;
   }
 
   .cate-primary__container .article__note {
@@ -278,6 +278,19 @@
   .radio-time-range .radio-long {
     grid-column: 1/3;
     grid-row: 1;
+  }
+
+  .cmt-content__header-left {
+    display: block;
+  }
+
+  .cmt-content__intro {
+    padding-top: 2px;
+    gap: 0.625rem;
+  }
+
+  .sub-comment {
+    padding-left: 0;
   }
 }
 

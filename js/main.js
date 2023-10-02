@@ -23,7 +23,11 @@ document.addEventListener("DOMContentLoaded", function () {
     var playsRadio = document.querySelectorAll(".js__playRadio");
     var volumsRadio = document.querySelectorAll(".js__radioVolum");
 
-    // show popup image
+    // control wrapper
+    var controlWrapper = document.querySelector(".js__controlWrapper");
+    let isSticky = false;
+
+    // one slide
     var oneSlides = document.querySelectorAll(".js__swiperItemsContainer");
 
     const app = {
@@ -183,15 +187,25 @@ document.addEventListener("DOMContentLoaded", function () {
         // scroll top
         scrollFunc: function () {
             if (backTop) {
-                if (
-                    document.body.scrollTop > 300 ||
-                    document.documentElement.scrollTop > 300
-                ) {
+                if (window.scrollY > 300) {
                     backTop.style.opacity = 1;
                     backTop.style.visibility = "visible";
                 } else {
                     backTop.style.opacity = 0;
                     backTop.style.visibility = "hidden";
+                }
+            }
+
+            // control wrapper
+            if (controlWrapper) {
+                var elementPosition = 500;
+
+                if (window.scrollY > elementPosition && !isSticky) {
+                    controlWrapper.classList.add("sticky");
+                    isSticky = true;
+                } else if (window.scrollY <= elementPosition && isSticky) {
+                    controlWrapper.classList.remove("sticky");
+                    isSticky = false;
                 }
             }
         },
